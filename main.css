@@ -1,0 +1,170 @@
+body {
+	background-color: lightblue;
+	text-align: center;
+}
+
+.wrapper {
+	display: grid;
+	width: 500px;
+	padding: 20px;
+	box-sizing: border-box;
+	grid-template-columns: 1fr 2fr 2fr 1fr;
+	grid-template-rows: 1fr 2fr 2fr 1fr;
+	grid-row-start: 1 / 5;
+	grid-column-start: 1 / 4;
+	grid-template-rows: fit-content(40%);
+}
+
+.game-intro {
+	position: absolute;
+	top: 100px;
+	width: 100px;
+	height: 100px;
+	padding: 0px 0;
+	line-height: 0
+	margin: 5px auto;
+	background: white;
+	color: magenta;
+	text-align: center;
+	text-shadow: auto
+	border-radius: 5px;
+}
+
+.gifs1 {
+	position: absolute;
+	top: 4px;
+	left: 220px;
+}
+
+.gifs2 {
+	position: absolute;
+	width: 100px;
+	top: 250px;
+	left: 300px;
+	transform: scale(2) rotate(40deg) translate(200deg);
+}
+
+.gifs3 {
+	position: absolute;
+	top: 100px;
+	left: 870px;
+}
+
+.gifs4 {
+	position: absolute;
+	width: 300px;
+	top: 255px;
+	left: 500px;
+}
+
+.cloud1 {
+	transform: rotateZ(-170deg)  translateY(200px) scale(2);
+}
+.cloud1:hover {
+	transform: rotateX(450deg);
+	cursor: pointer;
+	transition: transform 2s 0s;
+	background-blend-mode: screen;
+}
+
+.cloud2 {
+	transform: rotateX(20deg) translateX(100px) scale(2);
+	cursor: pointer;
+	transition: transform 2s 0s;
+}
+.cloud2:hover {
+	transform: rotate(500deg);
+	cursor: pointer;
+	transition: transform 2s 0s ease-in;
+}
+
+.cloud3 {
+	transform: rotateX(-50deg) translateY(40px) scale(1.5);
+	transform-style: ;
+}
+.cloud3:hover {
+	transform: rotate(100deg) rotateX(90deg);
+	cursor: pointer;
+	transition: transform 4s 0s;
+}
+
+.cloud4 {
+	transform: rotateZ(500deg) translateZ(250px) scale(1);
+	transform-style: ;
+}
+.cloud4:hover {
+	transform: rotate(360deg);
+	cursor: pointer;
+	transition: transform 2s 0s ease-in;
+}
+
+.cloud5 {
+	transform: rotateX(20deg) translateX(100px) scale(2.3);
+	transform-style: ;
+}
+.cloud5:hover {
+	transform: rotate(44deg) rotateX(90deg);
+	cursor: pointer;
+	transition: transform 2s 0.5s ease-in;
+}
+
+.cloud6 {
+	transform: rotateX(20deg) translateX(100px) scale(1.4);
+	transform-style: ;
+}
+.cloud6:hover {
+	transform: rotate(360deg) rotateZ(150deg);
+	cursor: pointer;
+	transition: transform 2s 0s;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	padding: 40px 0;
+	line-height: 0
+	margin: 60px auto;
+	background: pink;
+	color: white;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: background 1s, transform 3s 0s;
+}
+
+.circle:hover {
+	background-color: salmon;
+	transform: rotate(360deg);
+
+}
+
+.women-gif {
+	position: absolute; 
+	height: 100px;
+	top: 30px;
+	left: 260px;
+	transform: scale(1.5);
+}
+
+.women-gif:hover {
+	transition: scale(2.5) transform 1s 0s;
+}
+
+.yeezy {
+	position: absolute; 
+	height: 100px;
+	top: 79px;
+	left: 850px;
+}
+
+.fat-cat {
+	position: absolute; 
+	height: 200px;
+	top: 230px;
+	left: 380px;
+	border-collapse: 30px;
+}
+
+footer {
+	position: relative; 
+	top: 200px;
+}
